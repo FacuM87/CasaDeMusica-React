@@ -3,7 +3,12 @@
 }
 
 .cartWidget{
+  display: flex;
   width: 20px;
   height: 20px;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.nav{
+  margin-bottom: 10px;
 }

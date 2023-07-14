@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <nav>
             <h3>Casa de Música</h3>
-            <div>
+            <div className="nav">
                 <button>Instrumentos</button>
                 <button>Audio</button>
                 <button>Ofertas</button>
