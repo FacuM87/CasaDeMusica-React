@@ -8,3 +8,13 @@
   height: 20px;
   margin: 0 auto;
 }
+
+.h1-animation{
+  animation: cambiaColor 2s alternate-reverse infinite;
+}
+
+@keyframes cambiaColor {
+  to {
+    color: #FF7A00;
+  }
+}

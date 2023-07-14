@@ -3,7 +3,7 @@
 const ItemListContainer = ({greeting}) => {
     return(
         <div>
-            <h1>
+            <h1 className="h1-animation">
                 {greeting}
             </h1>
         </div>
