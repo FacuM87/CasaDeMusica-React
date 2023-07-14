@@ -1,16 +1,50 @@
-.App {
-  text-align: center;
+
+/* RESET */
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+
+
+/* NAVEGADOR */
+
+nav div ul{
+  list-style: none;
+}
+
+nav div ul a{
+  text-decoration: none;
+  color: #131A23;
+  font-size: large;
+  cursor: pointer;
+}
+
+nav div ul li {
+  margin: 0 40px ;
+}
+
+.navList{
+  align-self: center;
+}
+
+.logoSize{
+  width: 120px;
+  height: 120px;
 }
 
 .cartWidget{
   display: flex;
   width: 20px;
   height: 20px;
-  margin: 0 auto;
+  align-self: center;
+  margin-right: 40px;
 }
 
-.h1-animation{
-  animation: cambiaColor 2s alternate-reverse infinite;
+.ofertasAnimation{
+  animation: cambiaColor .6s alternate-reverse infinite;
 }
 
 @keyframes cambiaColor {
