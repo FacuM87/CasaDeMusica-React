@@ -26,6 +26,13 @@ nav div ul li {
   margin: 0 40px ;
 }
 
+nav {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.205);
+  width: 100vw;
+}
+
 .navList{
   align-self: center;
 }
