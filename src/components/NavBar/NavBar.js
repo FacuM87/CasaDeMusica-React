@@ -8,15 +8,15 @@ const NavBar = () => {
                 <img src={logo} alt="logo" className="logoSize" />
             </div>
             <div className="navList">
-                <ul className="row ">
+                <ul className="row">
                     <li className="col">
-                        <a href="">Instrumentos</a>
+                        <a href="" className="list-hoverfx">Instrumentos</a>
                     </li>
                     <li className="col">
-                        <a href="">Audio</a>
+                        <a href="" className="list-hoverfx">Audio</a>
                     </li>
                     <li className="col">
-                        <a href="">Accesorios</a>
+                        <a href="" className="list-hoverfx">Accesorios</a>
                     </li>
                     <li className="col">
                         <a href="" className="ofertasAnimation">Ofertas!</a>

@@ -11,15 +11,13 @@
 
 /* NAVEGADOR */
 
-nav div ul{
-  list-style: none;
+.logoSize{
+  width: 120px;
+  height: 120px;
 }
 
-nav div ul a{
-  text-decoration: none;
-  color: #131A23;
-  font-size: large;
-  cursor: pointer;
+nav div ul{
+  list-style: none;
 }
 
 nav div ul li {
@@ -37,17 +35,28 @@ nav {
   align-self: center;
 }
 
-.logoSize{
-  width: 120px;
-  height: 120px;
+nav div ul a{
+  position: relative;
+  text-decoration: none;
+  color: rgb(19, 26, 35);
+  font-size: large;
+  cursor: pointer;
 }
 
-.cartWidget{
-  display: flex;
-  width: 20px;
-  height: 20px;
-  align-self: center;
-  margin-right: 40px;
+.list-hoverfx::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgba(19, 26, 35,.8);
+  border-radius: 50px;
+  left: 10%;
+  transition: width .4s ease;
+}
+
+.list-hoverfx:hover:after{
+  width: 80%;
 }
 
 .ofertasAnimation{
@@ -56,6 +65,14 @@ nav {
 
 @keyframes cambiaColor {
   to {
-    color: #FF7A00;
+    color: rgb(255, 122, 0);
   }
+}
+
+.cartWidget{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-right: 40px;
 }
