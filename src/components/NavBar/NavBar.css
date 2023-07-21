@@ -2,36 +2,36 @@
 .logoSize{
     width: 120px;
     height: 120px;
-  }
+}
   
-  nav div ul{
+nav div ul{
     list-style: none;
-  }
+}
   
-  nav div ul li {
+nav div ul li {
     margin: 0 40px ;
-  }
+}
   
-  nav {
+nav {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.205);
     width: 100vw;
-  }
+}
   
-  .navList{
+.navList{
     align-self: center;
-  }
+}
   
-  nav div ul a{
+nav div ul a{
     position: relative;
     text-decoration: none;
     color: rgb(19, 26, 35);
     font-size: large;
     cursor: pointer;
-  }
+}
   
-  .list-hoverfx::after{
+.list-hoverfx::after{
     content: "";
     position: absolute;
     display: block;
@@ -41,26 +41,66 @@
     border-radius: 50px;
     left: 10%;
     transition: width .4s ease;
-  }
+}
   
-  .list-hoverfx:hover:after{
+.list-hoverfx:hover:after{
     width: 80%;
-  }
+}
   
-  .ofertasAnimation{
+.ofertasAnimation{
     animation: cambiaColor .6s alternate-reverse infinite;
-  }
+}
   
-  @keyframes cambiaColor {
+@keyframes cambiaColor {
     to {
       color: rgb(255, 122, 0);
     }
-  }
+}
+
+.search-bar{
+    outline: none;
+    padding: 5px; 
+    border: 1px solid lightgray;
+    transition: all 500ms;  
+}
+
+.search-bar:focus{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.205);
+}
+
+.search-btn{
+    border: none;
+    background: none;
+    right: 17px;
+    top: 4px;
+}
   
-  .cartWidget{
+.cartWidget{
     display: flex;
     width: 20px;
     height: 20px;
     align-self: center;
     margin-right: 40px;
-  }
+}
+
+
+/* COLLAPSE MENU */
+
+.bars__menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgba(19, 26, 35,.8);
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}

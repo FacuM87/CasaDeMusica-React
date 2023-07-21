@@ -1,5 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget"
-import logo from "../NavBar/assets/logo1.png"
+import logo from "./assets/logo1.png"
+import search from "./assets/search.svg"
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -22,12 +23,18 @@ const NavBar = () => {
                     <li className="col">
                         <a href="" className="ofertasAnimation">Ofertas!</a>
                     </li>
-                    <li className="col">
-                        <input />
+                    <li className="col position-relative">
+                        <input className="search-bar" placeholder="Ingrese su búsqueda"/>
+                        <button className="search-btn position-absolute"><img src={search} alt="search" /></button>
                     </li>
                 </ul>
             </div>
             <CartWidget />
+            <div className="bars__menu">
+                <span className="line1__bars-menu"></span>
+                <span className="line2__bars-menu"></span>
+                <span className="line3__bars-menu"></span>
+            </div>
         </nav>
     )
 }
