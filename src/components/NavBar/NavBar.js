@@ -1,5 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "../NavBar/assets/logo1.png"
+import "./NavBar.css"
 
 const NavBar = () => {
     return (
@@ -20,6 +21,9 @@ const NavBar = () => {
                     </li>
                     <li className="col">
                         <a href="" className="ofertasAnimation">Ofertas!</a>
+                    </li>
+                    <li className="col">
+                        <input />
                     </li>
                 </ul>
             </div>
