@@ -1,13 +1,13 @@
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "./assets/logo1.png"
-import search from "./assets/search.svg"
+/*import search from "./assets/search.svg"*/
 import "./NavBar.css"
 
 const NavBar = () => {
     return (
-        <nav className="d-flex justify-content-between mb-4">
-            <div>
-                <img src={logo} alt="logo" className="logoSize" />
+        <nav className="mb-4">
+            <div className="logoMedia">
+                <img src={logo} alt="logo" className="logo" />
             </div>
             <div className="navList">
                 <ul className="row">
@@ -23,10 +23,10 @@ const NavBar = () => {
                     <li className="col">
                         <a href="" className="ofertasAnimation">Ofertas!</a>
                     </li>
-                    <li className="col position-relative">
+                    {/* <li className="col position-relative">
                         <input className="search-bar" placeholder="Ingrese su búsqueda"/>
                         <button className="search-btn position-absolute"><img src={search} alt="search" /></button>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <CartWidget />
