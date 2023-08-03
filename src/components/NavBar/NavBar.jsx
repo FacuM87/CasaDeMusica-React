@@ -2,26 +2,27 @@ import CartWidget from "../CartWidget/CartWidget"
 import logo from "./assets/logo1.png"
 /*import search from "./assets/search.svg"*/
 import "./NavBar.css"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
         <nav className="mb-4">
             <div className="logoMedia">
-                <img src={logo} alt="logo" className="logo" />
+                <Link to={"/inicio"}> <img src={logo} alt="logo" className="logo" /> </Link>
             </div>
             <div className="navList">
                 <ul className="row">
                     <li className="col">
-                        <a href="" className="list-hoverfx">Instrumentos</a>
+                        <Link to={"/instrumentos"}> <a href="" className="list-hoverfx">Instrumentos</a> </Link>
                     </li>
                     <li className="col">
-                        <a href="" className="list-hoverfx">Audio</a>
+                       <Link to={"/audio"}> <a href="" className="list-hoverfx">Audio</a> </Link>
                     </li>
                     <li className="col">
-                        <a href="" className="list-hoverfx">Accesorios</a>
+                        <Link to={"/accesorios"}> <a href="" className="list-hoverfx">Accesorios</a> </Link>
                     </li>
                     <li className="col">
-                        <a href="" className="ofertasAnimation">Ofertas!</a>
+                        <Link to={"/ofertas"}> <a href="" className="ofertasAnimation">Ofertas!</a> </Link>
                     </li>
                     {/* <li className="col position-relative">
                         <input className="search-bar" placeholder="Ingrese su búsqueda"/>

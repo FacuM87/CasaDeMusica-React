@@ -15,7 +15,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     return(
         <div className='contador'>
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex justify-content-between mb-2'>
                 <button className='btn btn-primary' onClick={decrement}>-</button>
                 <p className=''>{quantity}</p>
                 <button className='btn btn-primary' onClick={increment}>+</button>
