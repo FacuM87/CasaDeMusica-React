@@ -8,7 +8,6 @@ import Inicio from "./pages/Inicio"
 import Instrumentos from "./pages/Instrumentos"
 import Accesorios from "./pages/Accesorios"
 import Audio from "./pages/Audio"
-import Error from "./pages/Error"
 import Layout from "./pages/Layout"
 import Ofertas from "./pages/Ofertas"
 
