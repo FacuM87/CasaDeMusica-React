@@ -1,11 +1,24 @@
 
+import { useState, useEffect } from "react";
+import traerData from "../../data/traerData";
+import Items from "../Items/Items";
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
+    
+    const [productos, setProductos]= useState ([])
+    console.log(productos);
+
+    useEffect(() => {
+      traerData()
+        .then((response) => {
+            setProductos(response);
+        })
+    }, [])
+    
+    
     return(
         <div>
-            <h1 className="text-center">
-                {greeting}
-            </h1>
+            <Items productos={productos} />
         </div>
     )
 }

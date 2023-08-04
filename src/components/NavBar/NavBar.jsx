@@ -8,21 +8,21 @@ const NavBar = () => {
     return (
         <nav className="mb-4">
             <div className="logoMedia">
-                <Link to={"/inicio"}> <img src={logo} alt="logo" className="logo" /> </Link>
+                <Link to={"/"}> <img src={logo} alt="logo" className="logo" /> </Link>
             </div>
             <div className="navList">
                 <ul className="row">
                     <li className="col">
-                        <Link to={"/instrumentos"}> <a href="" className="list-hoverfx">Instrumentos</a> </Link>
+                        <Link to={"/instrumentos"}  className="list-hoverfx">Instrumentos</Link>
                     </li>
                     <li className="col">
-                       <Link to={"/audio"}> <a href="" className="list-hoverfx">Audio</a> </Link>
+                       <Link to={"/audio"} className="list-hoverfx">Audio</Link>
                     </li>
                     <li className="col">
-                        <Link to={"/accesorios"}> <a href="" className="list-hoverfx">Accesorios</a> </Link>
+                        <Link to={"/accesorios"} className="list-hoverfx">Accesorios</Link>
                     </li>
                     <li className="col">
-                        <Link to={"/ofertas"}> <a href="" className="ofertasAnimation">Ofertas!</a> </Link>
+                        <Link to={"/ofertas"} className="ofertasAnimation">Ofertas!</Link>
                     </li>
                     {/* <li className="col position-relative">
                         <input className="search-bar" placeholder="Ingrese su búsqueda"/>
