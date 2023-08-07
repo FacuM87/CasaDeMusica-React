@@ -21,12 +21,13 @@ function ItemDetail() {
   
   return (
     <div className="d-flex justify-content-center detalleProducto">
-        <div>
-            <img src={item.img} alt={item.product}></img> 
+        <div className="sizeImg">
+            <img src={item.img} alt={item.product} className="img-fluid"/> 
         </div>
         <div className="bodyDetail">
-            <h4>{item.product}</h4>
+            <h4 className="mb-2">{item.product}</h4>
             <p>{item.description}</p>
+            <p>${item.price}</p>
             <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log("Cantidad agregada "+quantity)}></ItemCount>
         </div>
     </div>
