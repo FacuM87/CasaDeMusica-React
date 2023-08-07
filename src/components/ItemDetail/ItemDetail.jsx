@@ -20,16 +20,14 @@ function ItemDetail() {
   }, [id])
   
   return (
-    <div className="detalleProducto">
-        <div className="d-flex justify-content-center">
-            <div>
-                <img src={item.img} alt={item.product}></img>
-                <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log("Cantidad agregada "+quantity)}></ItemCount> 
-            </div>
-            <div>
-                <h4>{item.product}</h4>
-                <p>{item.description}</p>
-            </div>
+    <div className="d-flex justify-content-center detalleProducto">
+        <div>
+            <img src={item.img} alt={item.product}></img> 
+        </div>
+        <div className="bodyDetail">
+            <h4>{item.product}</h4>
+            <p>{item.description}</p>
+            <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log("Cantidad agregada "+quantity)}></ItemCount>
         </div>
     </div>
   )
