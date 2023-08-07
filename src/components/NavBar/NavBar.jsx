@@ -1,6 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "./assets/logo1.png"
-/*import search from "./assets/search.svg"*/
 import "./NavBar.css"
 import { Link } from "react-router-dom"
 
@@ -13,21 +12,17 @@ const NavBar = () => {
             <div className="navList">
                 <ul className="row">
                     <li className="col">
-                        <Link to={"/instrumentos"}  className="list-hoverfx">Instrumentos</Link>
+                        <Link to={"/category/instrumentos"}  className="list-hoverfx">Instrumentos</Link>
                     </li>
                     <li className="col">
-                       <Link to={"/audio"} className="list-hoverfx">Audio</Link>
+                       <Link to={"/category/audio"} className="list-hoverfx">Audio</Link>
                     </li>
                     <li className="col">
-                        <Link to={"/accesorios"} className="list-hoverfx">Accesorios</Link>
+                        <Link to={"/category/accesorios"} className="list-hoverfx">Accesorios</Link>
                     </li>
                     <li className="col">
-                        <Link to={"/ofertas"} className="ofertasAnimation">Ofertas!</Link>
+                        <Link to={"/category/ofertas"} className="ofertasAnimation">Ofertas!</Link>
                     </li>
-                    {/* <li className="col position-relative">
-                        <input className="search-bar" placeholder="Ingrese su búsqueda"/>
-                        <button className="search-btn position-absolute"><img src={search} alt="search" /></button>
-                    </li> */}
                 </ul>
             </div>
             <CartWidget />

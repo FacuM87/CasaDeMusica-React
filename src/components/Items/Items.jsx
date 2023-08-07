@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./items.css"
 
 function Items({productos}) {
@@ -6,17 +7,14 @@ function Items({productos}) {
             {productos.map((producto) =>
             
                 <div key={producto.id} className="tarjetas">   
-                    <img src={producto.img}/>
+                    <img src={producto.img} alt={producto.product}/>
                     <div className="bodyTarj">
                         <h6>{producto.product}</h6>
-                        <p>${producto.price}</p>
-                        <p>-cargar descripción-</p>
-
+                        <p>Precio: ${producto.price}</p>
+                        <Link className="btn btn-primary" to={`/item/${producto.id}`}>Mas Info</Link>
                     </div>
                 </div>
-
-                )
-                
+              )                
             }
     </div>
   )

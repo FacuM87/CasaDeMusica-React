@@ -2,26 +2,34 @@
 .tarj-container{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .tarjetas{
     margin: 15px;
     border: 1px solid lightgray;
     width: 150px;
-    height: 200px;
+    height: 235px;
     border-radius: 10px;
     overflow: hidden;
-    transition: all 0.6s ease-in-out;
-    cursor: pointer;
-    
+    transition: all 0.4s ease-in-out;
 }
 
 .tarjetas:hover{
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    transform: scale(1.05);
-    
+    transform: scale(1.05);    
+}
+
+.tarjetas:hover .btn{
+    transform: translateY(-10px);
 }
 
 .bodyTarj{
     padding: 0 5px;
+}
+
+.btn{
+    transform: translateY(35px);
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
 }
