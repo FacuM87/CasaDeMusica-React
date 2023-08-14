@@ -1,9 +1,27 @@
+import { useState } from "react"
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "./assets/logo1.png"
 import "./NavBar.css"
 import { Link } from "react-router-dom"
 
 const NavBar = () => {
+    
+    const [menuClass, setMenuClass] = useState(false)
+    
+    const menuHandleClick = () => { 
+        setMenuClass(!menuClass)
+    }
+
+    let toggleMenuClass1 = "line1__bars-menu"
+    let toggleMenuClass2 = "line2__bars-menu"
+    let toggleMenuClass3 = "line3__bars-menu"
+
+    if (menuClass){
+        toggleMenuClass1 = "activeline1__bars-menu"
+        toggleMenuClass2 = "activeline2__bars-menu"
+        toggleMenuClass3 = "activeline3__bars-menu"
+    }
+
     return (
         <nav className="mb-4">
             <div className="logoMedia">
@@ -26,10 +44,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <CartWidget />
-            <div className="bars__menu">
-                <span className="line1__bars-menu"></span>
-                <span className="line2__bars-menu"></span>
-                <span className="line3__bars-menu"></span>
+            <div className="bars__menu" onClick={menuHandleClick}>
+                <span className={`${toggleMenuClass1}`}></span>
+                <span className={`${toggleMenuClass2}`}></span>
+                <span className={`${toggleMenuClass3}`}></span>
             </div>
         </nav>
     )
