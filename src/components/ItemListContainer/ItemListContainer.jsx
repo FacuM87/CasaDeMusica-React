@@ -19,15 +19,24 @@ const ItemListContainer = () => {
             }else{setProductos(response)} 
         })
     }, [categoryId])
+
+    if (categoryId){
+
+        return(         
+            <div className="d-flex justify-content-center flex-column">
+                <h1 className="text-center itemContainer">{categoryId.charAt(0).toUpperCase() + categoryId.slice(1)}</h1>
+                <Items productos={productos} />
+            </div>)
+
+    } else {   
     
-    
-    return(
-        <div className="d-flex justify-content-center flex-column">
-    
-            <h1 className="text-center itemContainer">Catálogo de Productos</h1>
-            <Items productos={productos} />
-        </div>
-    )
+        return(
+            <div className="d-flex justify-content-center flex-column">
+                <h1 className="text-center itemContainer">Catálogo de Productos</h1>
+                <Items productos={productos} />
+            </div>
+        )
+    }
 }
 
 export default ItemListContainer
