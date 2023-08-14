@@ -26,7 +26,8 @@ const ItemListContainer = () => {
             <div className="d-flex justify-content-center flex-column">
                 <h1 className="text-center itemContainer">{categoryId.charAt(0).toUpperCase() + categoryId.slice(1)}</h1>
                 <Items productos={productos} />
-            </div>)
+            </div>
+        )
 
     } else {   
     
