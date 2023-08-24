@@ -1,33 +1,17 @@
-import { useParams } from "react-router-dom";
-import { itemPorID } from "../../data/traerData";
-import { useState, useEffect } from "react";
-import ItemCount from "../ItemCount/ItemCount"
-import "./itemDetail.css"
+import React from 'react';
+import ItemCount from '../ItemCount/ItemCount';
+import "./ItemDetail.css";
 
-
-function ItemDetail() {
-    
-    const [item, setItem] = useState([])  
-    const { id } = useParams()
-
-   useEffect(() => {
-
-    itemPorID(Number(id))
-        .then((response) => {
-            setItem(response);   
-        })
-    
-  }, [id])
-  
+const ItemDetail = ({id, img, product, description, price}) => {
   return (
-    <div className="d-flex justify-content-center detalleProducto">
+    <div key={id} className="d-flex justify-content-center detalleProducto">
         <div className="sizeImg">
-            <img src={item.img} alt={item.product} className="img-fluid"/> 
+            <img src={img} alt={product} className="img-fluid"/> 
         </div>
         <div className="bodyDetail">
-            <h4 className="mb-2">{item.product}</h4>
-            <p>{item.description}</p>
-            <p>${item.price}</p>
+            <h4 className="mb-2">{product}</h4>
+            <p>{description}</p>
+            <p>${price}</p>
             <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log("Cantidad agregada "+quantity)}></ItemCount>
         </div>
     </div>
