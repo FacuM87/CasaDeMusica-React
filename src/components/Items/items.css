@@ -31,6 +31,8 @@
 .sizeImgItems{
     width: 148px;
     height: 148px;
+    background-color: white;
+    padding: 5px;
 }
 
 .btn{

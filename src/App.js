@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import ItemDetail from "./components/ItemDetail/ItemDetail"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import { db } from './config/firebase'
+import { getDocs, collection } from 'firebase/firestore'
 
 
 function App() {
