@@ -1,10 +1,4 @@
 
-.tarj-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
 .tarjetas{
     margin: 15px;
     border: 1px solid lightgray;
