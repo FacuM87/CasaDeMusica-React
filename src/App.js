@@ -12,11 +12,12 @@ function App() {
   return (
     
     <BrowserRouter>
-    <NavBar/>
+      <NavBar/>
       <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/category/:categoryId" element={ <ItemListContainer/> }/>
           <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+          <Route path="*" element={<h1 className="position-absolute top-50 start-50 translate-middle">ERROR 404, NOT FOUND</h1>}/>
       </Routes>
     </BrowserRouter>
   )

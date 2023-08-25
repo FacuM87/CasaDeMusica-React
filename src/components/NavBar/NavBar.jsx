@@ -44,7 +44,9 @@ const NavBar = () => {
                     <Link to={"/category/ofertas"} className="ofertasAnimation">Ofertas!</Link>
                 </li>
             </ul>
+            
             <CartWidget />
+            
             <div className="bars__menu" onClick={menuHandleClick}>
                 <span className={`${cambiarLine1Class}`}></span>
                 <span className={`${cambiarLine2Class}`}></span>

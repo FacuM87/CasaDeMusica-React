@@ -10,6 +10,10 @@
     padding-left: 20px; 
 }
 
+.bodyDetail a{
+    text-decoration: none;
+}
+
 .sizeImg {
     width: 350px;
     height: 350px;
