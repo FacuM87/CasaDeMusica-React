@@ -6,7 +6,7 @@ function ItemList({productos}) {
   return (
     <div className="container tarj-container justify-content-center">
             {productos.map((producto) =>
-              <Item {...producto}/>
+              <Item key={producto.id} {...producto}/>
               )                
             }
     </div>
