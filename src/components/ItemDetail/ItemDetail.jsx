@@ -6,7 +6,7 @@ import { CartContext } from '../../CartContext/CartContext';
 
 const ItemDetail = ({id, img, product, description, price}) => {
 
-    const { carrito, agregarItemAlCarrito, productoEnCarrito} = useContext(CartContext)
+    const { carrito, agregarItemAlCarrito} = useContext(CartContext)
 
     const [cantidadAgregada, setCantidadAgregada] = useState(0)
     const [volver, setVolver] = useState(false)
@@ -14,10 +14,7 @@ const ItemDetail = ({id, img, product, description, price}) => {
     const handleOnAdd = (quantity) => {
         setCantidadAgregada(quantity)
         const item = {id, product, description, price}
-        if (productoEnCarrito) {
-            
-        }
-        agregarItemAlCarrito(item, quantity)
+        agregarItemAlCarrito(item, quantity)    
     }
     
     // -- REVISAR -- //
