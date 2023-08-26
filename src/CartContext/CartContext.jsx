@@ -13,11 +13,11 @@ export const CartProvider = ({children}) => {
     const agregarItemAlCarrito = (item, quantity) => {
         const prodEnCarrito = carrito.find((producto) => producto.id === item.id)
 
-        if (quantity===0) {
-            console.log("cantidad inválida");
-        } else{
+        if (quantity > 0) {
             prodEnCarrito? prodEnCarrito.quantity+=quantity : setCarrito([...carrito, {...item, quantity}])
             console.log(carrito);
+        } else{
+            console.log("cantidad inválida");
         }
         
     }
