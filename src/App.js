@@ -6,19 +6,23 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import { db } from './config/firebase'
 import { getDocs, collection } from 'firebase/firestore'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartProvider } from './CartContext/CartContext'
+import Cart from './components/Cart/Cart'
 
 
 function App() {
-  return (
-    
+  return (  
     <BrowserRouter>
-      <NavBar/>
-      <Routes>
-          <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/category/:categoryId" element={ <ItemListContainer/> }/>
-          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-          <Route path="*" element={<h1 className="position-absolute top-50 start-50 translate-middle">ERROR 404, NOT FOUND</h1>}/>
-      </Routes>
+      <CartProvider>
+          <NavBar/>
+          <Routes>
+              <Route path="/" element={<ItemListContainer/>}/>
+              <Route path="/category/:categoryId" element={ <ItemListContainer/> }/>
+              <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+              <Route path="/cart" element={<Cart/>}/>
+              <Route path="*" element={<h1 className="position-absolute top-50 start-50 translate-middle">ERROR 404, NOT FOUND</h1>}/>
+          </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }
