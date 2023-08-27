@@ -18,10 +18,10 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
     }
     
     // -- REVISAR -- //
-    const handleClick = () => {   
+   /*  const handleClick = () => {   
        setVolver(!volver)
        console.log(volver)
-    }
+    } */
     // -- REVISAR -- //
 
   return (
