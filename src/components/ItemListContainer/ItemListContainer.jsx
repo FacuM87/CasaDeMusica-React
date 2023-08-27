@@ -31,16 +31,6 @@ const ItemListContainer = () => {
                 )
             })
             .catch(error => {console.error(error);})
-/* 
-      traerData()
-        .then((response) => {
-            
-            if(categoryId){
-                setProductos(response.filter((elementos) => elementos.category.toUpperCase() === categoryId.toUpperCase()))
-            }else{setProductos(response)} 
-        })
-        .catch(error => {console.error(error);}) */
-
     }, [categoryId])
 
     if (categoryId){

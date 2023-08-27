@@ -23,14 +23,6 @@ function ItemDetailContainer() {
 
         }, [id])
 
-
-/*     itemPorID(Number(id))
-        .then((response) => {
-            setItem(response);   
-        })
-        .catch(error => {console.error(error);} ) 
-    }, [id])*/
-  
   return (
         <ItemDetail {...item}/>
     )
