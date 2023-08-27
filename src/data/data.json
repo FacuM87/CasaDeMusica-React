@@ -5,124 +5,142 @@
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/237182/0.jpg?v=637894481551670000",
   "category": "Instrumentos",
   "price": 321267,
-  "description": "amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus"
+  "description": "amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
+  "stock": 32
 }, {
   "id": 2,
   "product": "Guitarra Fender",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/241747/Sin-titulo-1-02.jpg?v=638163014318430000",
   "category": "Instrumentos",
   "price": 556875,
-  "description": "in porttitor pede justo eu massa donec dapibus duis at"
+  "description": "in porttitor pede justo eu massa donec dapibus duis at",
+  "stock": 51
 }, {
   "id": 3,
   "product": "Batería Pearl",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/208913/911728-MLA27134764395_042018-F.jpg?v=637313082141370000",
   "category": "Instrumentos",
   "price": 533929,
-  "description": "posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis"
+  "description": "posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis",
+  "stock": 35
 }, {
   "id": 4,
   "product": "Trompeta Odyssey",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/222978/59005000000-odyssey-OCR200-Corneta-627-1.jpg?v=637479793389000000",
   "category": "Instrumentos",
   "price": 176496,
-  "description": "vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat"
+  "description": "vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat",
+  "stock": 47
 }, {
   "id": 5,
   "product": "Bajo Ibanez",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/225700/1462268674_1161439.jpg?v=637564316738000000",
   "category": "Instrumentos",
   "price": 33504,
-  "description": "congue elementum in hac habitasse platea dictumst morbi vestibulum velit"
+  "description": "congue elementum in hac habitasse platea dictumst morbi vestibulum velit",
+  "stock": 15
 }, {
   "id": 6,
   "product": "Pioneer DJ",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/241463/Sin-titulo-1-02.jpg?v=638140592916200000",
   "category": "Audio",
   "price": 305759,
-  "description": "non interdum in ante vestibulum ante ipsum primis in faucibus"
+  "description": "non interdum in ante vestibulum ante ipsum primis in faucibus",
+  "stock": 65
 }, {
   "id": 7,
   "product": "Mackie Mixer",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/226785/Consola_Mackie_Tecnica-04.jpg?v=637581141824600000",
   "category": "Audio",
   "price": 383718,
-  "description": "at vulputate vitae nisl aenean lectus pellentesque eget nunc donec"
+  "description": "at vulputate vitae nisl aenean lectus pellentesque eget nunc donec",
+  "stock": 78
 }, {
   "id": 8,
   "product": "Controlador Nov",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/208057/658222-MLA31017445981_062019-F.jpg?v=637313079701870000",
   "category": "Audio",
   "price": 103857,
-  "description": "est congue elementum in hac habitasse platea dictumst morbi vestibulum"
+  "description": "est congue elementum in hac habitasse platea dictumst morbi vestibulum",
+  "stock": 10
 }, {
   "id": 9,
   "product": "Focusrite Clarett",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/239342/1631190952_1654644.jpg?v=637999094492900000",
   "category": "Audio",
   "price": 306018,
-  "description": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi"
+  "description": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
+  "stock": 13
 }, {
   "id": 10,
   "product": "Zoom Pro H6",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/226564/5.jpg?v=637577648527330000",
   "category": "Audio",
   "price": 502934,
-  "description": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem"
+  "description": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem",
+  "stock": 12
 }, {
   "id": 11,
   "product": "Soporte Mic",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/223274/Exportar_TECNICA-010.jpg?v=637496116448030000",
   "category": "Accesorios",
   "price": 522149,
-  "description": "velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit"
+  "description": "velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit",
+  "stock": 8
 }, {
   "id": 12,
   "product": "Pantalla p/mic",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/223285/Exportar_TECNICA-02.jpg?v=637496125149730000",
   "category": "Accesorios",
   "price": 241534,
-  "description": "quisque porta volutpat erat quisque erat eros viverra eget congue"
+  "description": "quisque porta volutpat erat quisque erat eros viverra eget congue",
+  "stock": 16
 }, {
   "id": 13,
   "product": "Atril Hercules",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/242317/Sin-titulo-1-02.jpg?v=638244679982670000",
   "category": "Accesorios",
   "price": 531156,
-  "description": "magnis dis parturient montes nascetur ridiculus mus etiam vel augue"
+  "description": "magnis dis parturient montes nascetur ridiculus mus etiam vel augue",
+  "stock": 74
 }, {
   "id": 14,
   "product": "Pié de Guitarra",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/241282/1489582218_1319549.jpg?v=638120106589870000",
   "category": "Accesorios",
   "price": 154079,
-  "description": "nisl nunc nisl duis bibendum felis sed interdum venenatis turpis"
+  "description": "nisl nunc nisl duis bibendum felis sed interdum venenatis turpis",
+  "stock": 17
 }, {
   "id": 15,
   "product": "Llave Evans",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/239243/Parche_B14DryB_Tecnica-03.jpg?v=637992360758600000",
   "category": "Accesorios",
   "price": 266800,
-  "description": "tempus vivamus in felis eu sapien cursus vestibulum proin eu"
+  "description": "tempus vivamus in felis eu sapien cursus vestibulum proin eu",
+  "stock": 42
 }, {
   "id": 16,
   "product": "Kit Guitarra",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/242178/1483_xlarge.jpg?v=638225308529500000",
   "category": "Ofertas",
   "price": 440954,
-  "description": "curabitur gravida nisi at nibh in hac habitasse platea dictumst"
+  "description": "curabitur gravida nisi at nibh in hac habitasse platea dictumst",
+  "stock": 12
 }, {
   "id": 17,
   "product": "Violín Aston",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/240516/VG107--23-.jpg?v=638070738342870000",
   "category": "Ofertas",
   "price": 591785,
-  "description": "vel lectus in quam fringilla rhoncus mauris enim leo rhoncus"
+  "description": "vel lectus in quam fringilla rhoncus mauris enim leo rhoncus",
+  "stock": 19
 }, {
   "id": 18,
   "product": "Sintetizador",
   "img": "https://bairesrocks.vteximg.com.br/arquivos/ids/235295/1-01.jpg?v=637777638672800000",
   "category": "Ofertas",
   "price": 135443,
-  "description": "varius ut blandit non interdum in ante vestibulum ante ipsum"
+  "description": "varius ut blandit non interdum in ante vestibulum ante ipsum",
+  "stock": 13
 }]

@@ -1,9 +1,10 @@
 
 import { useState, useEffect } from "react";
-import {traerData} from "../../data/traerData";
 import ItemList from "../ItemList/ItemList";
 import "./itemListContainer.css"
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../config/firebase";
 
 const ItemListContainer = () => {
     
@@ -11,6 +12,26 @@ const ItemListContainer = () => {
     const { categoryId } = useParams()
 
     useEffect(() => {
+
+        const productos = collection(db, "productos");
+
+        let consultaFirestore
+        if (categoryId) {
+            consultaFirestore = query(productos, where("category", "==", categoryId)) 
+        } else { 
+            consultaFirestore = productos 
+        }
+  
+        getDocs(consultaFirestore)
+            .then((response) => {
+                setProductos(
+                response.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() }
+                })
+                )
+            })
+            .catch(error => {console.error(error);})
+/* 
       traerData()
         .then((response) => {
             
@@ -18,7 +39,8 @@ const ItemListContainer = () => {
                 setProductos(response.filter((elementos) => elementos.category.toUpperCase() === categoryId.toUpperCase()))
             }else{setProductos(response)} 
         })
-        .catch(error => {console.error(error);})
+        .catch(error => {console.error(error);}) */
+
     }, [categoryId])
 
     if (categoryId){

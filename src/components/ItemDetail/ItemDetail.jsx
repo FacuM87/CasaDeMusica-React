@@ -4,7 +4,7 @@ import "./ItemDetail.css";
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../CartContext/CartContext';
 
-const ItemDetail = ({id, img, product, description, price}) => {
+const ItemDetail = ({id, img, product, description, price, stock}) => {
 
     const {agregarItemAlCarrito} = useContext(CartContext)
 
@@ -13,7 +13,7 @@ const ItemDetail = ({id, img, product, description, price}) => {
 
     const handleOnAdd = (quantity) => {
         setCantidadAgregada(quantity)
-        const item = {id, product, description, price}
+        const item = {id, product, description, price, stock}
         agregarItemAlCarrito(item, quantity)    
     }
     
@@ -36,7 +36,7 @@ const ItemDetail = ({id, img, product, description, price}) => {
             {
                 cantidadAgregada > 0 ? 
                 (<Link to="/cart"><button className="btn2">Terminar Compra</button></Link>) 
-                : (<ItemCount initial={0} stock={10} onAdd={handleOnAdd}></ItemCount>)      
+                : (<ItemCount initial={0} stock={stock} onAdd={handleOnAdd}></ItemCount>)      
             }    
         </div>
     </div>

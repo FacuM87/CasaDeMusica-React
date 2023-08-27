@@ -6,12 +6,16 @@ const Cart = () => {
 
     const {carrito, removerItemDelCarrito} = useContext(CartContext)
 
-  return (
-    <div className="position-absolute top-50 start-50 translate-middle mt-4">
+    // REVISAR
+    if (!carrito) {
+        return <h1 className="position-absolute top-50 start-50 translate-middle">Carrito Vacío</h1>
+    } else {
+        return(
+        <div className="position-absolute top-50 start-50 translate-middle mt-4">
         {
             carrito.map((item) =>
             <div key={item.id} className="cartElement">
-                
+
                 <h5>{item.product}</h5>
                 <p>Cantidad: {item.quantity}</p>
                 <p>Precio x Unidad: ${item.price}</p>
@@ -21,8 +25,10 @@ const Cart = () => {
             </div>
             )
         }
-    </div>
-  )
+        </div>)
+    }
+    // REVISAR
+
 }
 
 export default Cart

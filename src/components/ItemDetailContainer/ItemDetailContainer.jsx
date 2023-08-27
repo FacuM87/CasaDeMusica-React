@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { itemPorID } from "../../data/traerData";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../config/firebase";
 import "./itemDetailContainer.css";
 
 
@@ -11,13 +13,24 @@ function ItemDetailContainer() {
     const { id } = useParams()
 
    useEffect(() => {
+        const docRef = doc(db, "productos", id);
+        getDoc(docRef)
+            .then((response) => {
+                setItem(
+                { id: response.id, ...response.data()}
+                );
+            })
+            .catch(error => {console.error(error);})
 
-    itemPorID(Number(id))
+        }, [id])
+
+
+/*     itemPorID(Number(id))
         .then((response) => {
             setItem(response);   
         })
-        .catch(error => {console.error(error);} )
-    }, [id])
+        .catch(error => {console.error(error);} ) 
+    }, [id])*/
   
   return (
         <ItemDetail {...item}/>
