@@ -6,8 +6,7 @@ const Cart = () => {
 
     const {carrito, removerItemDelCarrito} = useContext(CartContext)
 
-    // REVISAR
-    if (!carrito) {
+    if (carrito.length===0) {
         return <h1 className="position-absolute top-50 start-50 translate-middle">Carrito Vacío</h1>
     } else {
         return(
@@ -27,8 +26,6 @@ const Cart = () => {
         }
         </div>)
     }
-    // REVISAR
-
 }
 
 export default Cart

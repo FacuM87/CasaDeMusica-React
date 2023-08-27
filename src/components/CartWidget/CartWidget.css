@@ -1,0 +1,10 @@
+
+.cartWidgetContainer a{
+    text-decoration: none;
+    color: black;
+}
+
+.widget{
+    margin-top: 32px;
+    margin-right: 20px;
+}
