@@ -1,0 +1,20 @@
+
+.detalleProducto{
+    margin-top: 170px ;
+}
+
+.bodyDetail{
+    height: 350px;
+    width: 350px;
+    padding-top: 70px;
+    padding-left: 20px; 
+}
+
+.bodyDetail a{
+    text-decoration: none;
+}
+
+.sizeImg {
+    width: 350px;
+    height: 350px;
+}
