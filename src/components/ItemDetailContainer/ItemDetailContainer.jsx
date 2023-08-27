@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { itemPorID } from "../../data/traerData";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { doc, getDoc } from "firebase/firestore";

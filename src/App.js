@@ -3,8 +3,6 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
-import { db } from './config/firebase'
-import { getDocs, collection } from 'firebase/firestore'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './CartContext/CartContext'
 import Cart from './components/Cart/Cart'
