@@ -9,7 +9,7 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
     const {agregarItemAlCarrito} = useContext(CartContext)
 
     const [cantidadAgregada, setCantidadAgregada] = useState(0)
-    const [volver, setVolver] = useState(false)
+    //const [volver, setVolver] = useState(false)
 
     const handleOnAdd = (quantity) => {
         setCantidadAgregada(quantity)
