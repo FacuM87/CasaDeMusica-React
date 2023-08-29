@@ -19,7 +19,7 @@ const Cart = () => {
     } else {
         return(
         <div className="position-absolute top-50 start-50 translate-middle mt-4">
-            {carrito.map((item) => <CartItem {...item}/>)}
+            {carrito.map((item) => <CartItem key={item.id} {...item}/>)}
             <Link to={"/checkout"}><button className="btn btn-primary">Checkout</button></Link>
         </div>)
     }
