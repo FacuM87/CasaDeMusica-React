@@ -1,9 +1,4 @@
 
-.cartElement{
-    padding: 10px;
-    border: 1px lightgray solid;
-    border-radius: 10px;
-    margin: 5px;
-    height: fit-content;
-    overflow: hidden;
+.cartItemsContainer{
+    margin-top: 150px;
 }

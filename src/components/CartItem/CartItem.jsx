@@ -9,12 +9,17 @@ const CartItem = ({id, product, quantity, price}) => {
 
   return (
     <div key={id} className="cartElement">
-
-        <h5>{product}</h5>
-        <p>Cantidad: {quantity}</p>
-        <p>Precio x Unidad: ${price}</p>
-        <p>Subtotal: ${quantity * price}</p>
-        <button className="btn btn-primary" onClick={() => removerItemDelCarrito(id)}>X</button>
+        <div>
+            <h5>{product}</h5>
+            <p>Cantidad: {quantity}</p>
+        </div>
+        <div>
+            <p>Precio x Unidad: ${price}</p>
+            <p>Subtotal: ${quantity * price}</p>
+        </div>
+        <div className="buttonContainer">
+            <button className="btn btn-primary" onClick={() => removerItemDelCarrito(id)}>X</button>
+        </div>
 
     </div>
   )

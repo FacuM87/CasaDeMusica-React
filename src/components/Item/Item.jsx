@@ -13,7 +13,7 @@ const Item = ({id, img, product, price, category}) => {
             <h6>{product}</h6>
             <p className="mb-0">Precio: ${price}</p>
             <p>{category.charAt(0).toUpperCase() + category.slice(1)}</p>
-            <Link className="btn btn-primary" to={`/item/${id}`}>Mas Info</Link>
+            <Link className="btn btn-primary btnItem" to={`/item/${id}`}>Mas Info</Link>
         </div>
     </div>
   )

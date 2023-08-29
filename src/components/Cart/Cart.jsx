@@ -7,7 +7,7 @@ import CartItem from '../CartItem/CartItem'
 
 const Cart = () => {
 
-    const {carrito} = useContext(CartContext)
+    const {carrito, vaciarCarrito} = useContext(CartContext)
 
     if (carrito.length===0) {
         return (
@@ -18,9 +18,12 @@ const Cart = () => {
         )
     } else {
         return(
-        <div className="position-absolute top-50 start-50 translate-middle mt-4">
+        <div className="cartItemsContainer" >
             {carrito.map((item) => <CartItem key={item.id} {...item}/>)}
-            <Link to={"/checkout"}><button className="btn btn-primary">Checkout</button></Link>
+            <div className="">
+                <Link to={"/checkout"}><button className="btn btn-primary m-2">Checkout</button></Link>
+                <button className="btn btn-primary" onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
+            </div>
         </div>)
     }
 }

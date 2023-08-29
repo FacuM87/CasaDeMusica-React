@@ -1,9 +1,19 @@
 
 .cartElement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
     border: 1px lightgray solid;
     border-radius: 10px;
     margin: 5px;
     height: fit-content;
-    overflow: hidden;
+    width: 80vw;
+    
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
