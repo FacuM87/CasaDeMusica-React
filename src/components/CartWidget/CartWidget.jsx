@@ -16,8 +16,6 @@ const CartWidget = () => {
         setwidgetNumber(cantProdCarrito)
     }, [cantProdCarrito])
 
-    
-
     return (
         <div className="cartWidgetContainer">
             <Link to={"/cart"} className="d-flex widget">
