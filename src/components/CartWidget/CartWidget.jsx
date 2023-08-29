@@ -10,8 +10,8 @@ const CartWidget = () => {
     const { carrito } = useContext(CartContext)
     const [ widgetNumber, setwidgetNumber ]  = useState(0)
     
-    const quantities = carrito.map((producto) => producto.quantity)
-    const cantProdCarrito = quantities.reduce((acc, quantity) => {return acc + quantity}, 0)
+    const quantitiesArray = carrito.map((producto) => producto.quantity)
+    const cantProdCarrito = quantitiesArray.reduce((acc, quantity) => {return acc + quantity}, 0)
     useEffect(() => {
         setwidgetNumber(cantProdCarrito)
     }, [cantProdCarrito])
