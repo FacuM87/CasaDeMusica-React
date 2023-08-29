@@ -19,10 +19,14 @@ const Cart = () => {
     } else {
         return(
         <div className="cartItemsContainer" >
-            <div className="">
-                <Link to={"/checkout"}><button className="btn btn-primary m-2">Concretar Compra!</button></Link>
-                <button className="btn btn-primary" onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
-                <p className="total">Total: ${total()}</p>
+            <div className="d-flex justify-content-around">
+                <div>
+                    <p className="total"><strong>Total: ${total()}</strong></p>
+                    <Link to={"/checkout"}><button className="btn btn-primary m-2">Concretar Compra!</button></Link>
+                </div>
+                <div className="vaciarBtnContainer">
+                    <button className="btn btn-primary" onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
+                </div>
             </div>
             {carrito.map((item) => <CartItem key={item.id} {...item}/>)}
         </div>)

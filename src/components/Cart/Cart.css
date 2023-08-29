@@ -1,9 +1,17 @@
 
 .cartItemsContainer{
-    margin-top: 150px;
+    margin: 150px auto;
+    width: 80vw;
 }
 
 .total{
     display: inline;
     margin: 10px;
+    font-size: larger;
+}
+
+.vaciarBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
