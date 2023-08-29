@@ -21,7 +21,7 @@ const Cart = () => {
         <div className="cartItemsContainer" >
             <div className="d-flex justify-content-around">
                 <div>
-                    <p className="total"><strong>Total: ${total()}</strong></p>
+                    <p className="total"><strong>Total: ${total()} </strong></p>
                     <Link to={"/checkout"}><button className="btn btn-primary m-2">Concretar Compra!</button></Link>
                 </div>
                 <div className="vaciarBtnContainer">
