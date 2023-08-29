@@ -2,3 +2,8 @@
 .cartItemsContainer{
     margin-top: 150px;
 }
+
+.total{
+    display: inline;
+    margin: 10px;
+}
