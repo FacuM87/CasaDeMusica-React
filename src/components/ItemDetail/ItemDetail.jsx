@@ -9,20 +9,12 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
     const {agregarItemAlCarrito} = useContext(CartContext)
 
     const [cantidadAgregada, setCantidadAgregada] = useState(0)
-    //const [volver, setVolver] = useState(false)
 
     const handleOnAdd = (quantity) => {
         setCantidadAgregada(quantity)
-        const item = {id, product, description, price, stock}
+        const item = {id, product, description, price, stock, img}
         agregarItemAlCarrito(item, quantity)    
     }
-    
-    // -- REVISAR -- //
-   /*  const handleClick = () => {   
-       setVolver(!volver)
-       console.log(volver)
-    } */
-    // -- REVISAR -- //
 
   return (
     <div key={id} className="d-flex justify-content-center detalleProducto">

@@ -8,7 +8,7 @@ export const CartProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([])
     console.log(carrito);
-
+    
     const vaciarCarrito = () => {setCarrito ([])}
 
     const agregarItemAlCarrito = (item, quantity) => {
@@ -16,10 +16,9 @@ export const CartProvider = ({children}) => {
 
         if (quantity > 0) {
             prodEnCarrito? prodEnCarrito.quantity+=quantity : setCarrito([...carrito, {...item, quantity}])
-            console.log(carrito);
         } else{
             console.log("cantidad inválida");
-        }        
+        }       
     }
     
     const removerItemDelCarrito = (itemId) => {
