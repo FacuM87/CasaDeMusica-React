@@ -1,0 +1,6 @@
+
+.resumenInfo {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
