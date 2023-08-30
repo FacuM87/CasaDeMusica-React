@@ -35,15 +35,15 @@ const Checkout = () => {
 
     if (ordenID) {
         return (
-            <div className="compraFinalizada">
+            <main className="compraFinalizada">
                 <h1>Su compra ha sido generada con éxito!</h1>
                 <p>El ID de su compra es: {ordenID}</p>
-            </div>
+            </main>
         )
     } 
 
   return (
-    <div className="checkoutContainer">
+    <main className="checkoutContainer">
         <div className="resumen">
             <div className="resumenPort">
                 <h5>Resúmen de Compra</h5>
@@ -54,21 +54,21 @@ const Checkout = () => {
         <div>
             <form className="form" onSubmit={handleSubmit(ordenDeCompra)}> 
                 <label>Nombre: 
-                    <input type="text" {...register("nombre")}/>
+                    <input type="text" {...register("nombre")} required/>
                 </label>
                 <label>Apellido: 
-                    <input type="text" {...register("apellido")}/>
+                    <input type="text" {...register("apellido")} required/>
                 </label>
                 <label>N° de Contacto
-                    <input type="phone" {...register("teléfono")}/>
+                    <input type="phone" {...register("teléfono")} required/>
                 </label>
                 <label>Email: 
-                    <input type="email" {...register("mail")}/>
+                    <input type="email" {...register("mail")} required/>
                 </label>
-                <button type="submit" className="mt-4">Comprar!</button>
+                <button type="submit" className="mt-4" >Comprar!</button>
             </form>    
         </div>
-    </div>
+    </main>
   )
 }
 

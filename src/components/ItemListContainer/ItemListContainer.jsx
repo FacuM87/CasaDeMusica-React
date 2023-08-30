@@ -36,19 +36,19 @@ const ItemListContainer = () => {
     if (categoryId){
 
         return(         
-            <div className="d-flex justify-content-center flex-column">
+            <main className="d-flex justify-content-center flex-column">
                 <h1 className="text-center itemContainer">{categoryId.charAt(0).toUpperCase() + categoryId.slice(1)}</h1>
                 <ItemList productos={productos} />
-            </div>
+            </main>
         )
 
     } else {   
     
         return(
-            <div className="d-flex justify-content-center flex-column">
+            <main className="d-flex justify-content-center flex-column">
                 <h1 className="text-center itemContainer">Catálogo de Productos</h1>
                 <ItemList productos={productos} />
-            </div>
+            </main>
         )
     }
 }

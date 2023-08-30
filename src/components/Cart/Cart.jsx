@@ -18,7 +18,7 @@ const Cart = () => {
         )
     } else {
         return(
-        <div className="cartItemsContainer" >
+        <main className="cartItemsContainer" >
             <div className="d-flex justify-content-around">
                 <div>
                     <p className="total"><strong>Total: ${total()} </strong></p>
@@ -29,7 +29,7 @@ const Cart = () => {
                 </div>
             </div>
             {carrito.map((item) => <CartItem key={item.id} {...item}/>)}
-        </div>)
+        </main>)
     }
 }
 

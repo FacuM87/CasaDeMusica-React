@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
-import "./itemDetailContainer.css";
 
 
 function ItemDetailContainer() {

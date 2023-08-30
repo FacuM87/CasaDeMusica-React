@@ -17,7 +17,7 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
     }
 
   return (
-    <div key={id} className="d-flex justify-content-center detalleProducto">
+    <main key={id} className="d-flex justify-content-center detalleProducto">
         <div className="sizeImg">
             <img src={img} alt={product} className="img-fluid"/> 
         </div>
@@ -34,7 +34,7 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
                 : (<ItemCount initial={0} stock={stock} onAdd={handleOnAdd}></ItemCount>)      
             }    
         </div>
-    </div>
+    </main>
   )
 }
 
