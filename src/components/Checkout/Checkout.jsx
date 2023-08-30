@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Checkout.css"
 import { CartContext } from '../../CartContext/CartContext'
 import CheckoutItems from './CheckoutItems/CheckoutItems'
@@ -10,6 +10,7 @@ const Checkout = () => {
 
     const { register, handleSubmit } = useForm()
     const { carrito, total, vaciarCarrito } = useContext(CartContext)
+    const [ ordenID, setOrdenID ]  = useState("") 
 
     const ordenDeCompra = (info) => {
         const orden={
@@ -22,9 +23,25 @@ const Checkout = () => {
 
         const ordenesRef = collection(db, "ordenesDeCompra")
         addDoc(ordenesRef, orden)
+            .then((data) =>{ 
+                setOrdenID(data.id) 
+            })
+            .catch((error) => console.log(error))
+        
+        console.log(ordenID);
 
+        
         vaciarCarrito()
     }
+
+    if (ordenID) {
+        return (
+            <div className="compraFinalizada">
+                <h1>Su compra ha sido generada con éxito!</h1>
+                <p>El ID de su compra es: {ordenID}</p>
+            </div>
+        )
+    } 
 
   return (
     <div className="checkoutContainer">
