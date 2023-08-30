@@ -30,7 +30,6 @@ const Checkout = () => {
         
         console.log(ordenID);
 
-        
         vaciarCarrito()
     }
 
