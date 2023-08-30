@@ -15,16 +15,6 @@ const NavBar = () => {
         setMenuOpen(!menuOpen)
     }
 
-    let cambiarLine1Class = "line1__bars-menu"
-    let cambiarLine2Class = "line2__bars-menu"
-    let cambiarLine3Class = "line3__bars-menu"
-
-    if (menuClass){
-        cambiarLine1Class = "activeline1__bars-menu"
-        cambiarLine2Class = "activeline2__bars-menu"
-        cambiarLine3Class = "activeline3__bars-menu"
-    }
-
     return (
         <nav className="mb-4">
             <div className="logoMedia">
@@ -48,9 +38,9 @@ const NavBar = () => {
             <CartWidget />
             
             <div className="bars__menu" onClick={menuHandleClick}>
-                <span className={`${cambiarLine1Class}`}></span>
-                <span className={`${cambiarLine2Class}`}></span>
-                <span className={`${cambiarLine3Class}`}></span>
+                <span className={menuClass? "activeline1__bars-menu": "line1__bars-menu"}></span>
+                <span className={menuClass? "activeline2__bars-menu": "line2__bars-menu"}></span>
+                <span className={menuClass? "activeline3__bars-menu": "line3__bars-menu"}></span>
             </div>
         </nav>
     )
