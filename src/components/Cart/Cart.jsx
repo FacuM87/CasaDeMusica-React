@@ -11,10 +11,10 @@ const Cart = () => {
 
     if (carrito.length===0) {
         return (
-            <div className="position-absolute top-50 start-50 translate-middle"> 
+            <main className="carritoVacio"> 
                 <h1>Carrito Vacío</h1>
                 <Link to={"/"} element={<ItemListContainer/>}><button className="btn btn-primary">Volver al Catálogo</button></Link>
-            </div>
+            </main>
         )
     } else {
         return(
