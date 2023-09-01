@@ -60,14 +60,14 @@ const Checkout = () => {
 
   return (
     <main className="checkoutContainer">
-        <div className="resumen">
+        <section className="resumen">
             <div className="resumenPort">
                 <h5>Resúmen de Compra</h5>
                 <p><strong>Total: ${total()}</strong></p>
             </div>
             {carrito.map((item) => <CheckoutItems key={item.id} {...item}/>)}
-        </div>
-        <div>
+        </section>
+        <section>
             <form className="form" onSubmit={handleSubmit(ordenDeCompra)}> 
                 <label>Nombre: 
                     <input type="text" {...register("nombre")} required/>
@@ -83,7 +83,7 @@ const Checkout = () => {
                 </label>
                 <button type="submit" className="mt-4" >Comprar!</button>
             </form>    
-        </div>
+        </section>
     </main>
   )
 }

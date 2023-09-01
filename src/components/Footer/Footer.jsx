@@ -21,9 +21,6 @@ const Footer = () => {
          <div>
             <Link to={ "https://www.google.com.ar/maps/preview" } target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link>
         </div>
-        <section>
-
-        </section>
     </footer>
   )
 }
