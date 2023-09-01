@@ -4,8 +4,6 @@ export const CartContext = createContext({
     carrito:[]
 })
 
-/* JSON.parse(sessionStorage.getItem("carrito")) || [] */
-
 let carritoInicial
 const carritoEnStorage = JSON.parse(sessionStorage.getItem("carrito"))
 carritoEnStorage? carritoInicial = carritoEnStorage : carritoInicial= []
