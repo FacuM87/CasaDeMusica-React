@@ -5,14 +5,18 @@ import CheckoutItems from './CheckoutItems/CheckoutItems'
 import { useForm } from "react-hook-form"
 import { db } from "../../config/firebase"
 import { collection, addDoc } from 'firebase/firestore'
+import ScaleLoader from "react-spinners/ScaleLoader"
+
 
 const Checkout = () => {
 
     const { register, handleSubmit } = useForm()
     const { carrito, total, vaciarCarrito } = useContext(CartContext)
     const [ ordenID, setOrdenID ]  = useState("") 
+    const [ loader, setLoader ] = useState(false)
 
     const ordenDeCompra = (info) => {
+        setLoader(true)
         const orden={
             fecha: new Date().toLocaleString(),
             cliente: info,
@@ -24,13 +28,25 @@ const Checkout = () => {
         const ordenesRef = collection(db, "ordenesDeCompra")
         addDoc(ordenesRef, orden)
             .then((data) =>{ 
-                setOrdenID(data.id) 
+                setOrdenID(data.id)
+                setTimeout(()=>{ setLoader(false) }, 1000)   
             })
-            .catch((error) => console.log(error))
+            .catch((error) => 
+                {setLoader(false)
+                console.log(error)}
+            )
         
         console.log(ordenID);
 
         vaciarCarrito()
+    }
+
+    if (loader){
+        return (
+            <main className="loader">
+                <ScaleLoader color={"#c27e3a"} size={150}/>
+            </main>
+        )
     }
 
     if (ordenID) {
