@@ -2,22 +2,25 @@
 
 "Casa de Música" es un eCommerce íntegramente desarrollado en React JS. <br>
 Para su desarrollo y optimización se utilizaron las siguientes librerías:
-
-- React DOM 
-- React Form
-- React Spinners
-
-El estilado del sitio se encuentra parcialmente anclado en **Bootstrap v5.3**. A su vez, tanto la información de los productos renderizados en pantalla como las órdenes de compra generadas por la app son almacenadas en **Firestore** de **Firebase** (utilizada como base de datos en la nube, a la cual accedemos mediante procesos asíncronos generados desde el sitio).
-
 <br>
-
-El deploy del sitio fue realizado en [Vercel](https://vercel.com). Al mismo podemos acceder desde [AQUÍ](https://proyecto-final-mingorance.vercel.app/).
+<br>
+- React Router -> https://reactrouter.com
+- React Form -> https://www.react-hook-form.com/
+- React Spinners -> https://www.npmjs.com/package/react-spinners || https://www.davidhu.io/react-spinners/
+<br>
+El estilado del sitio se encuentra parcialmente anclado en **Bootstrap v5.3**. 
+<br>
+<br>
+A su vez, tanto la información de los productos renderizados en pantalla como las órdenes de compra generadas por la app son almacenadas en **Firestore** de **Firebase**, utilizada como base de datos en la nube, a la cual accedemos mediante procesos asíncronos generados desde el sitio.
+<br>
+<br>
+El deploy del sitio fue realizado en [Vercel](https://vercel.com), al cual podemos acceder desde [AQUÍ](https://proyecto-final-mingorance.vercel.app/).
 
 <br>
 
 # Sobre las librerías utilizadas
 
-### React DOM
+### React Router
 Es la librería encargada del enrutamiento del proyecto.
 
 ### React Form
