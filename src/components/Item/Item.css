@@ -9,10 +9,12 @@
     transition: all 0.4s ease-in-out;
 }
 
+
 .tarjetas:hover{
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
     transform: scale(1.05);    
 }
+
 
 .tarjetas:hover .btn{
     transform: translateY(-10px);
@@ -20,6 +22,7 @@
 
 .bodyTarj{
     padding: 0 5px;
+    background-color: white;
 }
 
 .sizeImgItems{
@@ -35,3 +38,55 @@
     cursor: pointer;
 }
 
+
+
+/* TARJETA OFERTAS */
+
+.tarjetasOfertas{
+    margin: 15px;
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 275px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    border: 1px lightgray solid;
+}
+
+.tarjetasOfertas::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink,blue, red, blue, deeppink,blue);
+    background-size: 800%;
+    border: none;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% { background-position: 0,0; }
+    50% { background-position: 400%,0; }
+    100% { background-position: 0,0; }
+}
+
+.tarjetasOfertas:hover{
+    transform: scale(1.05);    
+}
+
+.tarjetasOfertas:hover .btnItemOfertas{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.btnItemOfertas{
+    transform: translateY(35px);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+}

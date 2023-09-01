@@ -1,13 +1,27 @@
-import {createContext, useState} from 'react'
+import {createContext, useState, useEffect} from 'react'
 
 export const CartContext = createContext({
     carrito:[]
 })
 
+/* JSON.parse(sessionStorage.getItem("carrito")) || [] */
+
+let carritoInicial
+const carritoEnStorage = JSON.parse(sessionStorage.getItem("carrito"))
+carritoEnStorage? carritoInicial = carritoEnStorage : carritoInicial= []
+
+console.log(carritoInicial);
+
+
 export const CartProvider = ({children}) => {
 
-    const [carrito, setCarrito] = useState([])
+
+    const [carrito, setCarrito] = useState(carritoInicial)
     console.log(carrito);
+
+    useEffect(() => {
+        sessionStorage.setItem("carrito", JSON.stringify(carrito));
+    }, [carrito])
 
     const vaciarCarrito = () => {setCarrito ([])}
 
