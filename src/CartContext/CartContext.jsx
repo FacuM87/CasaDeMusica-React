@@ -8,7 +8,7 @@ export const CartProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([])
     console.log(carrito);
-    
+
     const vaciarCarrito = () => {setCarrito ([])}
 
     const agregarItemAlCarrito = (item, quantity) => {
@@ -30,8 +30,12 @@ export const CartProvider = ({children}) => {
         return carrito.reduce((acc, item) => acc + item.price * item.quantity, 0);
     }
 
+    const cantidadesEnCarrito = () => {
+        return carrito.reduce((acc, item) => acc + item.quantity, 0);
+    }
+
  return (
-    <CartContext.Provider value={{carrito, vaciarCarrito, agregarItemAlCarrito, removerItemDelCarrito, total }}>
+    <CartContext.Provider value={{carrito, vaciarCarrito, agregarItemAlCarrito, removerItemDelCarrito, total, cantidadesEnCarrito }}>
         { children }
     </CartContext.Provider>
  )
