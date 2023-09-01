@@ -35,7 +35,7 @@ nav {
 nav ul a{
     position: relative;
     text-decoration: none;
-    color: rgb(19, 26, 35);
+    color: #131a23;
     font-size: large;
     cursor: pointer;
 }
@@ -55,7 +55,11 @@ nav ul a{
 .list-hoverfx:hover:after{
     width: 80%;
 }
-  
+
+.active{
+    color: #ce5915;
+}
+
 .ofertasAnimation{
     animation: cambiaColor .6s alternate-reverse infinite;
 }

@@ -2,7 +2,7 @@
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "./assets/logo1.png"
 import "./NavBar.css"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { useState } from "react"
 
 const NavBar = () => {
@@ -19,20 +19,20 @@ const NavBar = () => {
         <header>
             <nav className="mb-4">
                 <div className="logoMedia">
-                    <Link to={"/"}> <img src={logo} alt="logo" className="logo" /> </Link>
+                    <NavLink to={"/"}> <img src={logo} alt="logo" className="logo" /> </NavLink>
                 </div>
                 <ul className={menuOpen? "navListOpen" : "navList"}>
                     <li>
-                        <Link to={"/category/instrumentos"}  className="list-hoverfx">Instrumentos</Link>
+                        <NavLink to={"/category/instrumentos"} activeclassname="active" className="list-hoverfx">Instrumentos</NavLink>
                     </li>
                     <li>
-                    <Link to={"/category/audio"} className="list-hoverfx">Audio</Link>
+                        <NavLink to={"/category/audio"} activeclassname="active" className="list-hoverfx">Audio</NavLink>
                     </li>
                     <li>
-                        <Link to={"/category/accesorios"} className="list-hoverfx">Accesorios</Link>
+                        <NavLink to={"/category/accesorios"} activeclassname="active" className="list-hoverfx">Accesorios</NavLink>
                     </li>
                     <li>
-                        <Link to={"/category/ofertas"} className="ofertasAnimation">Ofertas!</Link>
+                        <NavLink to={"/category/ofertas"} className="ofertasAnimation">Ofertas!</NavLink>
                     </li>
                 </ul>
                 
