@@ -10,3 +10,13 @@
 main {
   padding-bottom: 9%;
 }
+
+.btn-primary{
+  background-color: #2d3d52;
+  border: 1px solid #f8a95a;
+  color: #f8a95a;
+}
+
+.btn-primary :hover {
+  background-color: #38495f ; 
+}

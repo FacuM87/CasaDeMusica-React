@@ -1,6 +1,6 @@
 # Resúmen del Proyecto
 
-"Casa de Música" es un eCommerce íntegramente desarrollado en React JS. <br>
+"Casa de Música" es un eCommerce íntegramente desarrollado con React JS. <br>
 Para su desarrollo y optimización se utilizaron las siguientes librerías:
 <br>
 <br>
@@ -9,7 +9,7 @@ Para su desarrollo y optimización se utilizaron las siguientes librerías:
 - React Form -> https://www.react-hook-form.com/
 - React Spinners -> https://www.npmjs.com/package/react-spinners || https://www.davidhu.io/react-spinners/
 <br>
-El estilado del sitio se encuentra parcialmente anclado en <strong>Bootstrap v5.3</strong>. 
+El estilado del sitio se encuentra parcialmente anclado en <strong>Bootstrap v5.3</strong>, a la vez que se incorporó <strong>FontAwesome</strong> al proyecto. 
 <br>
 <br>
 A su vez, tanto la información de los productos renderizados en pantalla como las órdenes de compra generadas por la app son almacenadas en <strong>Firestore</strong> de <strong>Firebase</strong>, utilizada como base de datos en la nube, a la cual accedemos mediante procesos asíncronos generados desde el sitio.
