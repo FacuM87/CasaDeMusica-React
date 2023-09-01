@@ -19,7 +19,7 @@ const Footer = () => {
             <Link to={ "https://web.whatsapp.com/" } target="_blank"><FontAwesomeIcon icon={faWhatsapp} /></Link>
         </div>
          <div>
-            <Link to={ "https://www.facebook.com/" } target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link>
+            <Link to={ "https://www.google.com.ar/maps/preview" } target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link>
         </div>
         <section>
 
