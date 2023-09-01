@@ -1,17 +1,44 @@
 
 footer {
-    height: 30px;
-    margin-top: 40px;
+    height: 40px;
     background-color: #131A23;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-footer p{
+.linksFooter a{
+    color: #c27e3a;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.linksFooter a :hover{
+    color: #cc9e70;
+}
+
+
+.linksFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.linksFooter div{
+    width: 25%;
+    height: 100%;
     text-align: center;
-    color: white;
+    padding-top: 5px;
+}
+
+.linksFooter :nth-child(2){
+    background-color: #2a394d;
+}
+
+.linksFooter :nth-child(3){
+    background-color: #3a4e69;
+}
+
+.linksFooter :nth-child(4){
+    background-color: #3e597c;
 }
