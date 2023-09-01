@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Resúmen del Proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Casa de Música" es un eCommerce íntegramente desarrollado en React JS. <br>
+Para su desarrollo y optimización se utilizaron las siguientes librerías:
 
-## Available Scripts
+- React DOM 
+- React Form
+- React Spinners
 
-In the project directory, you can run:
+El estilado del sitio se encuentra parcialmente anclado en **Bootstrap v5.3**. A su vez, tanto la información de los productos renderizados en pantalla como las órdenes de compra generadas por la app son almacenadas en **Firestore** de **Firebase** (utilizada como base de datos en la nube, a la cual accedemos mediante procesos asíncronos generados desde el sitio).
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El deploy del sitio fue realizado en [Vercel](https://vercel.com). Al mismo podemos acceder desde [AQUÍ](https://proyecto-final-mingorance.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+# Sobre las librerías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### React DOM
+Es la librería encargada del enrutamiento del proyecto.
 
-### `npm run build`
+### React Form
+Con React Hook Form simplificamos el gestionamiento de formularios. El empleo del hook "useForm" nos permite acceder a mayores niveles de abstracción, resumiendo los procesos de registro y validación en pocas líneas de código, volviéndolo entonces más ligero y sencillo de leer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### React Spinners
+React Spinners es una sencilla librería que facilita una variedad de spinners para utilizar en nuestra app, en formato de componentes personalizables.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
