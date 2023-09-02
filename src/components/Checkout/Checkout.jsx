@@ -63,7 +63,7 @@ const Checkout = () => {
         <section className="resumen">
             <div className="resumenPort">
                 <h5>Resúmen de Compra</h5>
-                <p><strong>Total: ${total()}</strong></p>
+                <p>Total: ${total()}</p>
             </div>
             {carrito.map((item) => <CheckoutItems key={item.id} {...item}/>)}
         </section>

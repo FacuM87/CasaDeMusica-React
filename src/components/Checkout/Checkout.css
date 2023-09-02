@@ -18,6 +18,22 @@
     gap: 10px;
 }
 
+.resumenPort h5{
+    background-color: #151d29;
+    padding: 5px;
+    border-radius: 5px;
+    color: #c27e3a;
+    font-weight: 350;
+}
+
+.resumenPort p{
+    background-color: #151d29;
+    padding: 5px;
+    border-radius: 5px;
+    color: #c27e3a;
+    font-weight: 350;
+}
+
 .compraFinalizada{
     text-align: center;
     margin-top: 170px;
@@ -42,7 +58,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(21, 29, 41);
+    background-color: #151d29;
     transition: all .5s;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "Nombre   Apellido" 
