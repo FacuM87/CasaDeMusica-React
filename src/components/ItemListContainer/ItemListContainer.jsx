@@ -36,9 +36,11 @@ const ItemListContainer = () => {
     if (categoryId){
 
         return(         
-            <main className="d-flex justify-content-center flex-column">
-                <h1 className="text-center itemContainer">{categoryId.charAt(0).toUpperCase() + categoryId.slice(1)}</h1>
-                <ItemList productos={productos} />
+            <main className="d-flex justify-content-center flex-column ">
+                <div className="itemContainer">
+                    <h1 className="text-center">{categoryId.charAt(0).toUpperCase() + categoryId.slice(1)}</h1>
+                    <ItemList productos={productos} />
+                </div>
             </main>
         )
 
@@ -46,8 +48,10 @@ const ItemListContainer = () => {
     
         return(
             <main className="d-flex justify-content-center flex-column">
-                <h1 className="text-center itemContainer">Catálogo de Productos</h1>
-                <ItemList productos={productos} />
+                <div className="itemContainer"> 
+                    <h1 className="text-center">Catálogo de Productos</h1>
+                    <ItemList productos={productos} />
+                </div>
             </main>
         )
     }

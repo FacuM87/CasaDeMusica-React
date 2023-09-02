@@ -10,7 +10,7 @@ import ScaleLoader from "react-spinners/ScaleLoader"
 
 const Checkout = () => {
 
-    const { register, handleSubmit } = useForm()
+    const { register, handleSubmit, formState:{ errors} } = useForm()
     const { carrito, total, vaciarCarrito } = useContext(CartContext)
     const [ ordenID, setOrdenID ]  = useState("") 
     const [ loader, setLoader ] = useState(false)
@@ -70,16 +70,16 @@ const Checkout = () => {
         <section>
             <form className="form" onSubmit={handleSubmit(ordenDeCompra)}> 
                 <label>Nombre: 
-                    <input type="text" {...register("nombre")} required/>
+                    <input type="text" {...register("nombre", {required: true})}/>
                 </label>
                 <label>Apellido: 
-                    <input type="text" {...register("apellido")} required/>
+                    <input type="text" {...register("apellido", {required: true})}/>
                 </label>
                 <label>N° de Contacto
-                    <input type="phone" {...register("teléfono")} required/>
+                    <input type="phone" {...register("teléfono", {required: true, maxLength: 15})}/>
                 </label>
                 <label>Email: 
-                    <input type="email" {...register("mail")} required/>
+                    <input type="email" {...register("mail", {required: true})}/>
                 </label>
                 <button type="submit" className="mt-4" >Comprar!</button>
             </form>    

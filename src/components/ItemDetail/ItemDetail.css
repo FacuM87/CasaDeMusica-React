@@ -1,13 +1,21 @@
 
 .detalleProducto{
-    margin-top: 170px ;
+    margin-top: 170px;
+    color: lightgray;
+    border-radius: 10px;
 }
 
+.img-itemDetail{
+    border-radius: inherit;
+}
 .bodyDetail{
     height: 350px;
     width: 350px;
     padding-top: 70px;
     padding-left: 20px; 
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.486);
+    color: black;
 }
 
 .bodyDetail a{
@@ -17,4 +25,6 @@
 .sizeImg {
     width: 350px;
     height: 350px;
+    border-radius: inherit;
+    background-color: white;
 }

@@ -9,11 +9,15 @@
 
 main {
   padding-bottom: 9%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(./assets/bg-ins2-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .btn-primary{
   background-color: #2d3d52;
-  border: 1px solid #f8a95a;
+  border: transparent;
   color: #f8a95a;
 }
 

@@ -2,3 +2,7 @@
 .itemContainer{
     margin-top: 140px;
 }
+
+.itemContainer h1{
+    color: white;
+}
