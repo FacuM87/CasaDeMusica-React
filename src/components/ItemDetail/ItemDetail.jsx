@@ -16,7 +16,7 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
         const item = {id, product, description, price, stock, img}
         agregarItemAlCarrito(item, quantity)
         quantity==0? setSmall(true) : setSmall(false)
-        toast("Producto agregado!")         
+        quantity>0 && toast("Producto agregado!")         
     }
 
   return (
