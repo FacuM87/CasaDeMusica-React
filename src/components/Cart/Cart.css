@@ -6,9 +6,16 @@
 }
 
 .total{
-    display: inline;
+    display: block;
     margin: 10px;
     font-size: larger;
+    font-weight: 350;
+    background-color: #2D3D52;
+    padding: 8px;
+    border-radius: 5px;
+    color: #F8A95A;
+    font-weight: 350;
+    text-align: center;
 }
 
 .vaciarBtnContainer{
@@ -17,10 +24,17 @@
     justify-content: center;
 }
 
+.carritoVacioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+}
+
 .carritoVacio{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20%; 
+    margin-top: 170px;
 }

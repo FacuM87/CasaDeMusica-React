@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { toast } from "react-toastify";
 import ItemCount from '../ItemCount/ItemCount';
 import "./ItemDetail.css";
 import { Link } from 'react-router-dom';
@@ -14,7 +15,8 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
         setCantidadAgregada(quantity)
         const item = {id, product, description, price, stock, img}
         agregarItemAlCarrito(item, quantity)
-        quantity==0? setSmall(true) : setSmall(false) 
+        quantity==0? setSmall(true) : setSmall(false)
+        toast("Producto agregado!")         
     }
 
   return (
@@ -36,7 +38,7 @@ const ItemDetail = ({id, img, product, description, price, stock}) => {
                     : (
                     <div className="d-flex flex-column">
                         <ItemCount initial={0} stock={stock} onAdd={handleOnAdd}></ItemCount>
-                        <small className={small? "" : "d-none"}>La cantidad ingresada es inválida</small>
+                        <small className={small? "ps-3" : "d-none"}>La cantidad ingresada es inválida</small>
                    </div>
                     )      
                 }    

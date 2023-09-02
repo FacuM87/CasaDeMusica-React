@@ -1,7 +1,7 @@
 
 .checkoutContainer{
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     justify-content: center;
     align-items: center;
     gap: 20px;

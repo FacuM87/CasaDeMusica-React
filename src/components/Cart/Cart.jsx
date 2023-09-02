@@ -11,9 +11,11 @@ const Cart = () => {
 
     if (carrito.length===0) {
         return (
-            <main className="carritoVacio"> 
-                <h1>Carrito Vacío</h1>
-                <Link to={"/"} element={<ItemListContainer/>}><button className="btn btn-primary">Volver al Catálogo</button></Link>
+            <main className="carritoVacioContainer">
+                <div className="carritoVacio">
+                    <h1>Carrito Vacío</h1>
+                    <Link to={"/"} element={<ItemListContainer/>} className="ps-3"><button className="btn btn-primary">Volver al Catálogo</button></Link>
+                </div> 
             </main>
         )
     } else {
@@ -22,10 +24,10 @@ const Cart = () => {
             <div className="cartItemsContainer"> 
                 <div className="d-flex justify-content-around">
                     <div>
-                        <p className="total"><strong>Total: ${total()} </strong></p>
-                        <Link to={"/checkout"}><button className="btn btn-primary m-2">Concretar Compra!</button></Link>
+                        <p className="total">Total: ${total()}</p>
                     </div>
                     <div className="vaciarBtnContainer">
+                        <Link to={"/checkout"}><button className="btn btn-primary m-2">Concretar Compra!</button></Link>
                         <button className="btn btn-primary" onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
                     </div>
                 </div>
