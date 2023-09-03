@@ -51,9 +51,11 @@ const Checkout = () => {
 
     if (ordenID) {
         return (
-            <main className="compraFinalizada">
-                <h1>Su compra ha sido generada con éxito!</h1>
-                <p>El ID de su compra es: {ordenID}</p>
+            <main className="d-flex justify-content-center align-center">
+                <div className="compraFinalizada"> 
+                    <h1>Su compra ha sido generada con éxito!</h1>
+                    <p>El ID de su compra es: {ordenID}</p>
+                </div>
             </main>
         )
     } 
