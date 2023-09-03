@@ -13,13 +13,13 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
-        const productos = collection(db, "productos");
+        const prod = collection(db, "productos");
 
         let consultaFirestore
         if (categoryId) {
-            consultaFirestore = query(productos, where("category", "==", categoryId)) 
+            consultaFirestore = query(prod, where("category", "==", categoryId)) 
         } else { 
-            consultaFirestore = productos 
+            consultaFirestore = prod 
         }
   
         getDocs(consultaFirestore)
