@@ -8,6 +8,7 @@ Para su desarrollo y optimización se utilizaron las siguientes librerías:
 - React Router -> https://reactrouter.com
 - React Form -> https://www.react-hook-form.com/
 - React Spinners -> https://www.npmjs.com/package/react-spinners || https://www.davidhu.io/react-spinners/
+- React Toastify -> https://fkhadra.github.io/react-toastify/introduction/
 <br>
 El estilado del sitio se encuentra parcialmente anclado en <strong>Bootstrap v5.3</strong>, a la vez que se incorporó <strong>FontAwesome</strong> al proyecto. 
 <br>
@@ -30,6 +31,9 @@ Con React Hook Form simplificamos el gestionamiento de formularios. El empleo de
 
 ### React Spinners
 React Spinners es una sencilla librería que brinda una variedad de spinners para utilizar en nuestra app, en formato de componentes personalizables.
+
+### React Toastify
+React Toastify es la librería utilizada para dar el aviso cada vez que un producto fue ingresado al carrito exitosamente.
 
 <br>
 
