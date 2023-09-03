@@ -10,6 +10,7 @@
 .resumen{
     width: 422px;
     color: lightgray;
+    margin-top: 170px;
 }
 
 .resumenPort{
@@ -74,7 +75,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "Nombre   Apellido" 
                          "N°deContacto   Email" 
-                         "Enviar    Enviar";
+                         "Comprar    Comprar";
   }
 
   .form:hover {
@@ -96,13 +97,6 @@
     color: #c27e3a;
   }
 
-  .form h2 {
-    color: #c27e3a;
-    grid-area: Contacto;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
   .form label:nth-child(1) {
     grid-area: Nombre;
   }
@@ -120,7 +114,7 @@
   }
 
   .form button {
-    grid-area: Enviar;
+    grid-area: Comprar;
     width: auto;
     border: 1px solid;
     border-radius: 5px;
@@ -143,6 +137,6 @@
                            "Apellido Apellido" 
                            "N°deContacto N°deContacto" 
                            "Email  Email" 
-                           "Enviar    Enviar";
+                           "Comprar    Comprar";
     }
   }
