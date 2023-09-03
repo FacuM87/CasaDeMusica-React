@@ -60,13 +60,6 @@ const Checkout = () => {
 
   return (
     <main className="checkoutContainer">
-        <section className="resumen">
-            <div className="resumenPort">
-                <h5>Resúmen de Compra</h5>
-                <p>Total: ${total()}</p>
-            </div>
-            {carrito.map((item) => <CheckoutItems key={item.id} {...item}/>)}
-        </section>
         <section>
             <form className="form" onSubmit={handleSubmit(ordenDeCompra)}> 
                 <label>Nombre: 
@@ -83,6 +76,13 @@ const Checkout = () => {
                 </label>
                 <button type="submit" className="mt-4" >Comprar!</button>
             </form>    
+        </section>
+        <section className="resumen">
+            <div className="resumenPort">
+                <h5>Resúmen de Compra</h5>
+                <p>Total: ${total()}</p>
+            </div>
+            {carrito.map((item) => <CheckoutItems key={item.id} {...item}/>)}
         </section>
     </main>
   )
