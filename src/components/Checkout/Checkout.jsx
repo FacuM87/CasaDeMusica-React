@@ -6,6 +6,9 @@ import { useForm } from "react-hook-form"
 import { db } from "../../config/firebase"
 import { collection, addDoc } from 'firebase/firestore'
 import ScaleLoader from "react-spinners/ScaleLoader"
+import Lottie from "lottie-react"
+import lottieAnimation from "./assets/lottieAnimation.json"
+
 
 
 const Checkout = () => {
@@ -44,7 +47,7 @@ const Checkout = () => {
     if (loader){
         return (
             <main className="loader">
-                <ScaleLoader color={"#c27e3a"} size={150}/>
+                <ScaleLoader color={"#c27e3a"} size={150} className="mt-5"/>
             </main>
         )
     }
@@ -52,9 +55,14 @@ const Checkout = () => {
     if (ordenID) {
         return (
             <main className="d-flex justify-content-center align-center">
-                <div className="compraFinalizada"> 
-                    <h1>Su compra ha sido generada con éxito!</h1>
-                    <p>El ID de su compra es: {ordenID}</p>
+                <div className="compraFinalizada">
+                    <div>
+                        <h1>Su compra ha sido generada con éxito!</h1>
+                        <p>El ID de su compra es: {ordenID}</p>
+                    </div> 
+                    <div className="gifContainer">
+                        <Lottie animationData={lottieAnimation} />
+                    </div>
                 </div>
             </main>
         )
