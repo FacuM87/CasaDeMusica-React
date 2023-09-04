@@ -4,6 +4,8 @@ import { CartContext } from '../../CartContext/CartContext'
 import { Link } from 'react-router-dom'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import CartItem from '../CartItem/CartItem'
+import Lottie from "lottie-react"
+import emptyCart from "./assets/emptyCart.json"
 
 const Cart = () => {
 
@@ -13,7 +15,9 @@ const Cart = () => {
         return (
             <main className="carritoVacioContainer">
                 <div className="carritoVacio">
-                    <h1>Carrito Vacío</h1>
+                    <div className="emptyCart"> 
+                        <Lottie animationData={emptyCart} />
+                    </div>
                     <Link to={"/"} element={<ItemListContainer/>} className="ps-3"><button className="btn btn-primary">Volver al Catálogo</button></Link>
                 </div> 
             </main>

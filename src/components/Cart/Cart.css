@@ -38,3 +38,8 @@
     align-items: center;
     margin-top: 170px;
 }
+
+.emptyCart{
+    width: 250px;
+    margin-bottom: 20px;
+}
