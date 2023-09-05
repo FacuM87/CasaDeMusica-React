@@ -13,7 +13,7 @@ import lottieAnimation from "./assets/lottieAnimation.json"
 
 const Checkout = () => {
 
-    const { register, handleSubmit, formState:{ errors} } = useForm()
+    const { register, handleSubmit } = useForm()
     const { carrito, total, vaciarCarrito } = useContext(CartContext)
     const [ ordenID, setOrdenID ]  = useState("") 
     const [ loader, setLoader ] = useState(false)
