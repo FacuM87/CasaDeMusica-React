@@ -44,4 +44,11 @@
 .cartItemImgSize{
     height: 90px;
     width: 90px;
+    transition: all .1s ease-in-out;
+}
+
+.cartItemImgSizeCollapsed{
+    height: 0px;
+    width: 0px;
+    transition: all .1s ease-in-out;
 }

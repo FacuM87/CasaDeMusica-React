@@ -16,7 +16,7 @@ const CartItem = ({id, product, quantity, price, img}) => {
   return (
     <div key={id} className={collapseItem? "cartElementCollapsed" : "cartElement"}>
         <div className="d-flex">
-            <div className="cartItemImgSize">
+            <div className={collapseItem? "cartItemImgSizeCollapsed" : "cartItemImgSize"}>
                 <img src={img} alt={product} className="img-fluid"/>  
             </div>
             <div>
